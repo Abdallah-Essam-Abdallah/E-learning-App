@@ -1,16 +1,47 @@
-# courses_app
+E-learning app with clean architecture 
 
-A new Flutter project.
+Backend:Firebase
 
-## Getting Started
+State management:Bloc
 
-This project is a starting point for a Flutter application.
+Features:
 
-A few resources to get you started if this is your first Flutter project:
+• Sign in with the email and password 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+• Sign in with Google
+ 
+• Sign in with Facebook (to be added)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+• email verification 
+
+• reset password 
+
+• Search by name
+
+• favorites
+
+• responsive UI
+
+• Chat section 
+
+• payment integration with Paymob
+
+• Community section to add and share posts with other users
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
