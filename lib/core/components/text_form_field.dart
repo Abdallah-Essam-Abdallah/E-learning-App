@@ -8,7 +8,7 @@ class AppTextFormField extends StatelessWidget {
     this.suffixIcon,
     required this.obscureText,
     required this.keyboardType,
-    this.controller,
+    required this.controller,
     this.validator,
     this.onChanged,
   });
@@ -17,7 +17,7 @@ class AppTextFormField extends StatelessWidget {
   final Widget? prefixIcon;
   final TextInputType keyboardType;
   final Widget? suffixIcon;
-  final TextEditingController? controller;
+  final TextEditingController controller;
   final String? Function(String?)? validator;
   final Function(String)? onChanged;
 
