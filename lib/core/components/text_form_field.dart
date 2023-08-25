@@ -6,7 +6,7 @@ class AppTextFormField extends StatelessWidget {
     required this.hintText,
     this.prefixIcon,
     this.suffixIcon,
-    required this.obscureText,
+    this.obscureText,
     required this.keyboardType,
     required this.controller,
     this.validator,
@@ -21,7 +21,7 @@ class AppTextFormField extends StatelessWidget {
   final String? Function(String?)? validator;
   final Function(String)? onChanged;
 
-  final bool obscureText;
+  final bool? obscureText;
 
   @override
   Widget build(BuildContext context) {
