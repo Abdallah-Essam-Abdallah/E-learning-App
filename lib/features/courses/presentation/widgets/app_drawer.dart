@@ -2,16 +2,12 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:courses_app/core/utils/appstrings.dart';
 import 'package:courses_app/core/utils/responsive.dart';
-
 import 'package:courses_app/features/chat/presentation/screens/chat_screen.dart';
 import 'package:courses_app/features/community/presentation/screens/community_screen.dart';
-
 import 'package:courses_app/features/content/presentation/screens/purchased_courses_screen.dart';
-
 import 'package:courses_app/features/favorites/presentation/favorites_bloc/favorites_bloc.dart';
 import 'package:courses_app/features/favorites/presentation/screen/favorites_screen.dart';
 import 'package:courses_app/features/profile/presentation/screens/profile_screen.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -46,8 +42,7 @@ class AppDrawer extends StatelessWidget {
                   ),
                   Expanded(
                     child: AutoSizeText(
-                      profileBloc.user!.userName ??
-                          FirebaseAuth.instance.currentUser!.displayName!,
+                      profileBloc.user!.userName,
                       style: Theme.of(context).textTheme.titleLarge,
                       maxLines: 1,
                     ),
@@ -57,8 +52,7 @@ class AppDrawer extends StatelessWidget {
                   ),
                   Expanded(
                     child: AutoSizeText(
-                      profileBloc.user!.email ??
-                          FirebaseAuth.instance.currentUser!.email!,
+                      profileBloc.user!.email,
                       style: Theme.of(context).textTheme.titleLarge,
                       maxLines: 1,
                     ),
