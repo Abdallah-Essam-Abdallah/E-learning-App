@@ -51,7 +51,7 @@ class _AddPostScreenState extends State<AddPostScreen> {
                     onPressed: () {
                       BlocProvider.of<CommunityBloc>(context).add(AddPostEvent(
                           text: textController.text,
-                          userName: profileBloc.user!.userName ?? '',
+                          userName: profileBloc.user!.userName,
                           userImage: profileBloc.user!.image ??
                               AppStrings.profileImage,
                           image: communityBloc.image ?? ''));
