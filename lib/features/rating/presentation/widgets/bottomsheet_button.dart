@@ -142,8 +142,8 @@ class _BottomSheetButtonState extends State<BottomSheetButton> {
                                                     stars: ratingBloc
                                                         .initialRating,
                                                     userName: profileBloc
-                                                            .user!.userName ??
-                                                        '',
+                                                            .user!.userName
+                                                        ,
                                                     userImage: profileBloc
                                                             .user!.image ??
                                                         AppStrings
