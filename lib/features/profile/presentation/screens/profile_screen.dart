@@ -34,8 +34,7 @@ class ProfileScreen extends StatelessWidget {
                 ),
                 Expanded(
                   child: AutoSizeText(
-                    profileBloc.user!.userName ??
-                        FirebaseAuth.instance.currentUser!.displayName!,
+                    profileBloc.user!.userName,
                     style: Theme.of(context).textTheme.titleLarge,
                     maxLines: 1,
                   ),
@@ -45,8 +44,7 @@ class ProfileScreen extends StatelessWidget {
                 ),
                 Expanded(
                   child: AutoSizeText(
-                    profileBloc.user!.email ??
-                        FirebaseAuth.instance.currentUser!.email!,
+                    profileBloc.user!.email,
                     style: Theme.of(context).textTheme.titleLarge,
                     maxLines: 1,
                   ),
