@@ -103,8 +103,8 @@ class _CommentsScreenState extends State<CommentsScreen> {
                               commentingTime: DateTime.now().toString(),
                               userImage: profileBloc.user!.image ??
                                   AppStrings.profileImage,
-                              userName: profileBloc.user!.userName ?? '',
-                              userId: profileBloc.user!.userId ?? '',
+                              userName: profileBloc.user!.userName,
+                              userId: profileBloc.user!.userId,
                               postId: widget.postId,
                             ));
                             commentController.clear();
