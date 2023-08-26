@@ -1,13 +1,9 @@
 import 'package:auto_size_text/auto_size_text.dart';
-
 import 'package:courses_app/core/utils/appstrings.dart';
 import 'package:courses_app/core/utils/responsive.dart';
-
 import 'package:courses_app/features/profile/presentation/controller/profile_bloc/profile_bloc.dart';
 import 'package:courses_app/features/profile/presentation/widgets/profile_screen_list.dart';
 import 'package:courses_app/features/profile/presentation/widgets/profileimage_widget.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
