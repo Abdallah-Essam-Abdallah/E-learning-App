@@ -74,7 +74,13 @@ class AuthenticationDataSourceImpl implements AuthenticationDataSource {
     required String userId,
     String? image,
   }) async {
-    UserModel model = UserModel(userName, userId, email, phoneNumber, image);
+      UserModel model = UserModel(
+      image: image,
+      userName: userName,
+      userId: userId,
+      email: email,
+      phoneNumber: phoneNumber,
+    );
     try {
       FirebaseFirestore.instance
           .collection('users')
