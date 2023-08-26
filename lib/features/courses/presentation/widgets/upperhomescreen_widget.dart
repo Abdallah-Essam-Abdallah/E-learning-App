@@ -1,7 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 
 import 'package:courses_app/core/chache_helper/chache_helper.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -55,11 +55,10 @@ class UpperHomeScreenWidget extends StatelessWidget {
                     CacheHelper.getString(key: 'userName') == null) {
                   CacheHelper.setString(
                       key: 'userName',
-                      value: state.user.userName ??
-                          FirebaseAuth.instance.currentUser!.displayName!);
+                      value: state.user.userName);
                   return Expanded(
                     child: AutoSizeText(
-                      state.user.userName!,
+                      state.user.userName,
                       style: Theme.of(context).textTheme.titleLarge,
                     ),
                   );
