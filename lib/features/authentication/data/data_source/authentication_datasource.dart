@@ -143,6 +143,11 @@ class AuthenticationDataSourceImpl implements AuthenticationDataSource {
             await firebaseAuth.signInWithCredential(credential);
 
         user = userCredential.user;
+        await createUserInDatabase(
+            userName: user!.displayName ?? '',
+            email: user.email ?? '',
+            phoneNumber: user.phoneNumber ?? '',
+            userId: user.uid);
       } on FirebaseAuthException catch (e) {
         if (e.code == 'account-exists-with-different-credential') {
           throw AccountExistsWithDifferentCredentialException();
