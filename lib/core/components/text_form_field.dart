@@ -32,7 +32,7 @@ class AppTextFormField extends StatelessWidget {
 
       validator: validator,
       onChanged: onChanged,
-      obscureText: obscureText,
+      obscureText: obscureText ?? false,
       decoration: InputDecoration(
           hintText: hintText,
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
